@@ -1,0 +1,105 @@
+body {
+  background-color: #ededed;
+}
+
+/* TYPOGRAPHY
+==============================================*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+div#main-nav-top a {
+  font-family: 'Oswald', sans-serif;
+  color: #bcbcbc;
+}
+
+h1 {
+  margin-bottom: 4rem;
+}
+
+
+
+/* NAVIGATION
+==============================================*/
+
+nav#main-nav {
+  position: fixed;
+  width: 100%;
+}
+
+div#main-nav-top {
+  background-color: white;
+  font-size: 3rem;
+  border-bottom: 1px solid #d3d3d3;
+  width: 100%;
+}
+
+div#main-nav-top::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+div#main-nav-top ul,
+div.main-nav-dropdown ul {
+  padding: 0;
+  margin: 0;
+}
+
+div#main-nav-top ul li {
+  display: inline-block;
+}
+
+div#main-nav-top a {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1rem 2rem;
+  color: #E03636;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+}
+
+div#main-nav-top a span {
+  vertical-align: middle;
+  padding-bottom: 0.5rem;
+}
+
+div.main-nav-dropdown {
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  border-top: none;
+  display: none;
+}
+
+div.main-nav-dropdown ul li {
+  list-style: none;
+}
+
+div.main-nav-dropdown a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 100%;
+  border-top: 1px solid #d3d3d3;
+  color: #E03636;
+}
+
+div.main-nav-dropdown li:first-child a {
+  border-top: none;
+}
+
+div#main-nav-top a:hover,
+div.main-nav-dropdown a:hover {
+  text-decoration: none;
+  background-color: #fafafa;
+}
+
+/* CONTENT
+==============================================*/
+
+div.content-box {
+  margin-top: 10rem;
+  padding:  3rem 7rem;
+  background-color: white;
+}
