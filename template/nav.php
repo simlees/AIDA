@@ -17,5 +17,12 @@
       <?php endforeach; ?>
 
     </ul>
+    <ul>
+
+      <?php foreach ($otherDocs as $file):?>
+              <li><a target="blank" href="<?=$file[1]?>"><?=$file[0]?></a></li>
+      <?php endforeach; ?>
+
+    </ul>
   </div>
 </nav>

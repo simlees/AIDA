@@ -19,6 +19,11 @@ h1 {
   margin-bottom: 4rem;
 }
 
+h2 {
+  font-size: 2.2rem;
+  padding-left: 0.5rem;
+}
+
 
 
 /* NAVIGATION
@@ -71,6 +76,15 @@ div.main-nav-dropdown {
   border: 1px solid #d3d3d3;
   border-top: none;
   display: none;
+}
+
+div.main-nav-dropdown ul:last-child {
+  border-top: 1px solid #d3d3d3;
+}
+
+div.main-nav-dropdown ul:last-child li {
+  margin-top: 1px;
+  border-top: 1px solid #d3d3d3;
 }
 
 div.main-nav-dropdown ul li {
