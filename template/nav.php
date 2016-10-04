@@ -24,5 +24,8 @@
       <?php endforeach; ?>
 
     </ul>
+    <ul>
+      <li><a href="../index.php">Return to Main Site</a></li>
+    </ul>
   </div>
 </nav>
