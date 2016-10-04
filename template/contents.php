@@ -7,7 +7,8 @@ $labs = array(
 );
 
 $otherDocs = array(
-    array("Module Handbook","moduleHandbook.docx")
+    array("Module Handbook","moduleHandbook.docx"),
+    array("Initial Tests","initialtests.php")
 );
 
 ?>

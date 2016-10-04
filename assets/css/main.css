@@ -117,3 +117,11 @@ div.content-box {
   padding:  3rem 7rem;
   background-color: white;
 }
+
+/* FORMS
+==============================================*/
+.error-message {
+  color: #a94442;
+  font-weight: bold;
+  line-height: 3rem;
+}

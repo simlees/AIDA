@@ -1,8 +1,9 @@
 <?php
 $title = "Home";
+require_once 'config/init.php';
 include 'template/header.php';
 include 'template/nav.php';
-include 'template/labs.php';
+include 'template/contents.php';
 include 'template/content-box.php';
 ?>
 <!-- CONTENT START -->

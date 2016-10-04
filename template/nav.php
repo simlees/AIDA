@@ -1,4 +1,4 @@
-<?php include 'labs.php'; ?>
+<?php include 'contents.php'; ?>
 
 <nav id="main-nav">
   <div id="main-nav-top">
