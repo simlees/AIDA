@@ -78,13 +78,13 @@ div.main-nav-dropdown {
   display: none;
 }
 
-div.main-nav-dropdown ul:last-child {
+div.main-nav-dropdown ul:not(:first-child) {
   border-top: 1px solid #d3d3d3;
+  margin-top: 1px;
 }
 
-div.main-nav-dropdown ul:last-child li {
-  margin-top: 1px;
-  border-top: 1px solid #d3d3d3;
+div.main-nav-dropdown ul:not(:last-child) {
+  border-bottom: 1px solid #d3d3d3;
 }
 
 div.main-nav-dropdown ul li {
