@@ -1,10 +1,10 @@
 <?php
 $title = "Home";
-require_once 'config/init.php';
-include 'template/header.php';
-include 'template/nav.php';
-include 'template/contents.php';
-include 'template/content-box.php';
+require_once '../config/init.php';
+include '../template/header.php';
+include '../template/nav.php';
+include '../template/contents.php';
+include '../template/content-box.php';
 ?>
 <!-- CONTENT START -->
 
@@ -27,5 +27,5 @@ include 'template/content-box.php';
 
   <!-- CONTENT END -->
 <?php
-include 'template/footer.php';
+include '../template/footer.php';
 ?>

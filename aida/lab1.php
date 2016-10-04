@@ -1,9 +1,9 @@
 <?php
 $title = "Lab 1 - Web Projects";
-require_once 'config/init.php';
-include 'template/header.php';
-include 'template/nav.php';
-include 'template/content-box.php';
+require_once '../config/init.php';
+include '../template/header.php';
+include '../template/nav.php';
+include '../template/content-box.php';
 ?>
 <!-- CONTENT START -->
 
@@ -12,10 +12,10 @@ if (isset($_SESSION["formSuccess"]))
 {
     if($_SESSION["formSuccess"] == true)
     {
-        include 'template/form-success-message.php';
+        include '../template/form-success-message.php';
     } else 
     {
-        include 'template/form-fail-message.php';
+        include '../template/form-fail-message.php';
     }
     $_SESSION["formSuccess"] = null;
     
@@ -26,7 +26,7 @@ if (isset($_SESSION["formSuccess"]))
 ?>
 
 
-<form action="includes/functions/submit_message.php" method="post">
+<form action="../includes/functions/submit_message.php" method="post">
   <div class="form-group">
     <label for="formEmail <?php if(isset($_SESSION['formErrors']['email'])){echo "has-error";} ?>">Email address</label>
     <input type="email" class="form-control" id="formEmail" name="formEmail" placeholder="Email" value="<?php if(isset($_SESSION['formSubmission']['email'])){echo $_SESSION['formSubmission']['email'];}?>" required>
@@ -62,5 +62,5 @@ if (isset($_SESSION["formSuccess"]))
 
   <!-- CONTENT END -->
 <?php
-include 'template/footer.php';
+include '../template/footer.php';
 ?>

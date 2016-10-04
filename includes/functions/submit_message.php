@@ -57,5 +57,5 @@ if ($formSubmissionIsValid)
 	$_SESSION["formSuccess"] = false;
 }
 
-header('Location: ../../lab1.php');
+header('Location: ../../aida/lab1.php');
 exit();

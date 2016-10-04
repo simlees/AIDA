@@ -1,9 +1,9 @@
 <?php
 $title = "Lab 2 - Classes and Objects";
-require_once 'config/init.php';
-include 'template/header.php';
-include 'template/nav.php';
-include 'template/content-box.php';
+require_once '../config/init.php';
+include '../template/header.php';
+include '../template/nav.php';
+include '../template/content-box.php';
 ?>
 <!-- CONTENT START -->
 
@@ -53,5 +53,5 @@ echo "<p>New Max Speed = ".$blueCar1->getMaxSpeed()."</p>";
 
   <!-- CONTENT END -->
 <?php
-include 'template/footer.php';
+include '../template/footer.php';
 ?>
