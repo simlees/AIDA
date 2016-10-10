@@ -1,8 +1,25 @@
 <?php
 
-$prod = false;
 
-if($prod)
+
+
+
+
+
+
+$environment = 3;
+// 1 - LIVE
+// 2 - XAMPP
+// 3 - C9.io
+
+
+
+
+
+
+
+
+if($environment == 1)
 {
   $config['base_url']='http://simeonlees.co.uk/';
   $db['hostname'] = 'simeonlees.co.uk.mysql';
@@ -10,10 +27,17 @@ if($prod)
   $db['password'] = 'EYdBW8K2';
   $db['database'] = 'simeonlees_co_uk';
   $db['dbdriver'] = 'mysql';
-} else {
+} else if ($environment == 2){
   $config['base_url']='http://simeonlees.co.uk/';
   $db['hostname'] = 'localhost';
   $db['username'] = 'root';
+  $db['password'] = '';
+  $db['database'] = 'citybasedb';
+  $db['dbdriver'] = 'mysql';
+} else {
+  $config['base_url']= getenv('IP');
+  $db['hostname'] = getenv('IP');
+  $db['username'] = 'simeonlees';
   $db['password'] = '';
   $db['database'] = 'citybasedb';
   $db['dbdriver'] = 'mysql';

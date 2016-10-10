@@ -22,7 +22,7 @@ if (isset($_POST['formSubmit']))
   }
   else
   {
-    header('Location: lab2.php');
+    header('Location: login.php');
     exit();
   }
 }
@@ -62,6 +62,9 @@ include 'template/content-box.php';
 
   <!-- CONTENT END -->
 <?php
+
+$_SESSION['login'] = null;
+
 include 'template/content-footer.php';
 include 'template/footer.php';
 ?>
