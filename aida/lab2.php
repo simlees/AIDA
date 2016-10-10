@@ -1,14 +1,14 @@
 <?php
 $title = "Lab 2 - Classes and Objects";
-require_once '../config/init.php';
-include '../template/header.php';
-include '../template/nav.php';
-include '../template/content-box.php';
+require_once 'config/init.php';
+include 'template/header.php';
+include 'template/nav.php';
+include 'template/content-box.php';
 ?>
 <!-- CONTENT START -->
 
 <h3>Built-in Functions</h3>
-<?php 		
+<?php
 $strvar = "apples";
 $intvar = 19;
 $floatvar = 27.579;
@@ -30,7 +30,7 @@ $url = "www.somesite.com";
     print "<li>Number of items in product array = ".count($product_array)."</li>";
     print "<li>Is Apples in the array? = ".in_array($strvar, $product_array)."</li>";
     print "<li>Add 'price'=>2.45 onto the product array and display.</li>";
-    $product_array[price] = 2.45;
+    $product_array['price'] = 2.45;
     print_r($product_array);
     $somesitearray = explode(".",$url);
     print "<li>Explode www.somesite.com into an array (separated by '.') and display = </li>";
@@ -42,7 +42,7 @@ $url = "www.somesite.com";
 
 <h3>Create Classes and Objects</h3>
 
-<?php 
+<?php
 
 
 $blueCar1 = new Vehichle(1, 4, "blue", 150);
@@ -53,5 +53,6 @@ echo "<p>New Max Speed = ".$blueCar1->getMaxSpeed()."</p>";
 
   <!-- CONTENT END -->
 <?php
-include '../template/footer.php';
+include 'template/content-footer.php';
+include 'template/footer.php';
 ?>

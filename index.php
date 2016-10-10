@@ -1,7 +1,6 @@
 <?php
 $title = "Simeon Lees";
-require_once 'config/init.php';
-include 'template/header.php';
+include 'aida/template/header.php';
 ?>
 <!-- CONTENT START -->
 

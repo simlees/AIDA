@@ -6,7 +6,7 @@ $labs = array(
     array("Lab 3 - Object Oriented  Development with PHP","lab3.php")
 );
 
-$otherDocs = array(
+$otherFiles = array(
     array("Module Handbook","moduleHandbook.docx"),
     array("Initial Tests","initialtests.php")
 );

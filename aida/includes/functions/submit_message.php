@@ -1,5 +1,6 @@
 <?php
-include '../../config/init.php';
+session_start();
+//include '../../config/init.php';
 
 $_SESSION['formSubmission']['email'] = filter_var($_POST["formEmail"], FILTER_SANITIZE_EMAIL);
 $_SESSION['formSubmission']['text'] = filter_var($_POST["formText"], FILTER_SANITIZE_SPECIAL_CHARS);
@@ -51,11 +52,12 @@ if ($formSubmissionIsValid)
 {
 	// Update database via prepared statements
 	// Send acknowledgement Email
+	mail($_SESSION['formSubmission']['email'], "Message", $_SESSION['formSubmission']['text']);
 	$_SESSION['formSubmission'] = null;
 	$_SESSION["formSuccess"] = true;
 } else {
 	$_SESSION["formSuccess"] = false;
 }
 
-header('Location: ../../aida/lab1.php');
+header('Location: ../../lab1.php');
 exit();

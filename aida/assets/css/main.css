@@ -36,15 +36,25 @@ nav#main-nav {
 
 div#main-nav-top {
   background-color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   border-bottom: 1px solid #d3d3d3;
   width: 100%;
+}
+
+img.main-nav-logo {
+  height: 5rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0;
 }
 
 div#main-nav-top::after {
   content: "";
   display: block;
   clear: both;
+}
+
+div#main-nav-top>ul {
+  display: block;
 }
 
 div#main-nav-top ul,
@@ -60,10 +70,11 @@ div#main-nav-top ul li {
 div#main-nav-top a {
   display: inline-block;
   vertical-align: top;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 6rem;
   color: #E03636;
   border-left: 1px solid #d3d3d3;
   border-right: 1px solid #d3d3d3;
+  height: 7.5rem;
 }
 
 div#main-nav-top a span {
@@ -109,13 +120,31 @@ div.main-nav-dropdown a:hover {
   background-color: #fafafa;
 }
 
+div#main-nav-top a#search-button {
+  border: none;
+}
+
+div#main-nav-top a#search-button span {
+  color: #d3d3d3;
+}
+
+div#main-nav-top input,
+div#main-nav-top form {
+  display: inline-block;
+}
+
+
+
 /* CONTENT
 ==============================================*/
 
 div.content-box {
-  margin-top: 10rem;
   padding:  3rem 7rem;
   background-color: white;
+}
+
+div.content-container {
+  padding-top: 12rem;
 }
 
 /* FORMS
