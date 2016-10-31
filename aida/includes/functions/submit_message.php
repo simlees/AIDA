@@ -45,19 +45,20 @@ if($_SESSION['formSubmission']['securityAnswer'] != 7)
 
 
 
-
 // Do work
 
 if ($formSubmissionIsValid)
 {
 	// Update database via prepared statements
 	// Send acknowledgement Email
-	mail($_SESSION['formSubmission']['email'], "Message", $_SESSION['formSubmission']['text']);
+	mail($_SESSION['formSubmission']['email'], "CityBase - Thanks for your email!", "Thanks, the below email has been received.<br><br>".$_SESSION['formSubmission']['text']);
 	$_SESSION['formSubmission'] = null;
 	$_SESSION["formSuccess"] = true;
+
 } else {
+
 	$_SESSION["formSuccess"] = false;
 }
 
-header('Location: ../../lab1.php');
+header('Location: ../../contact.php');
 exit();

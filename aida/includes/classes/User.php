@@ -49,7 +49,7 @@ class User
            echo $e->getMessage();
        }
     }
-    
+
     public function register($email, $fname, $lname, $password, $confirmPassword)
     {
       if ($password !== $confirmPassword)
@@ -57,28 +57,28 @@ class User
         $_SESSION['register']['errors']['password'] = "Passwords do not match!";
         return false;
       }
-      
+
       if ($this->userExists($email))
       {
         $_SESSION['register']['errors']['email'] = "Email is already taken.";
         return false;
       }
-      
+
       try
       {
-      
+
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-        
+
         $statement = $this->connection->prepare("INSERT INTO users(email,password,fname,lname) VALUES(:email, :password, :fname, :lname)");
-        $stmt->execute(array(":email" => $email, ":password" => $hashedPassword, ":fname" => $fname, ":lname" => $lname)); 
-        
-        return true; 
+        $statement->execute(array(":email" => $email, ":password" => $hashedPassword, ":fname" => $fname, ":lname" => $lname)); 
+
+        return true;
       }
       catch(PDOException $e)
       {
         echo $e->getMessage();
         return false;
-      }    
+      }
     }
 
     public function getFullname()
@@ -96,7 +96,7 @@ class User
         return false;
       }
     }
-    
+
     public function userExists($email)
     {
       try

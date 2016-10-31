@@ -7,7 +7,7 @@
 
 
 
-$environment = 3;
+$environment = 2;
 // 1 - LIVE
 // 2 - XAMPP
 // 3 - C9.io
@@ -53,7 +53,7 @@ try
 
 
 
-    
+
 
 
 
@@ -62,3 +62,8 @@ catch(PDOException $e)
 {
      echo $e->getMessage();
 }
+
+
+error_reporting(-1);
+ini_set('display_errors', 'On');
+set_error_handler("var_dump");

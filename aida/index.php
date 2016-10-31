@@ -7,7 +7,9 @@ include 'template/content-box.php';
 ?>
 <!-- CONTENT START -->
 
-  <h1>City Base</h1>
+<h1>CityBase</h1>
+
+<p>Welcome to CityBase.</p>
 
 
   <!-- CONTENT END -->

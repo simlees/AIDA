@@ -41,6 +41,7 @@ include 'template/content-box.php';
 ?>
 <!-- CONTENT START -->
 
+<h1>Login</h1>
 
 <form method="post">
   <div class="form-group">

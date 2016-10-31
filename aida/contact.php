@@ -25,7 +25,14 @@ if (isset($_SESSION["formSuccess"]))
 
 ?>
 
+<h1>Contact Us</h1>
+<?php
 
+// if (isset($_SESSION["mailSuccess"]))
+// {
+//   echo $_SESSION['mailSuccess'];
+// }
+  ?>
 <form action="includes/functions/submit_message.php" method="post">
   <div class="form-group">
     <label for="formEmail <?php if(isset($_SESSION['formErrors']['email'])){echo "has-error";} ?>">Email address</label>
@@ -62,6 +69,10 @@ if (isset($_SESSION["formSuccess"]))
 
   <!-- CONTENT END -->
 <?php
+$_SESSION['formSubmission'] = null;
+$_SESSION['formErrors'] = null;
+
+
 include 'template/content-footer.php';
 include 'template/footer.php';
 ?>
