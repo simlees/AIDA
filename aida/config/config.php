@@ -7,7 +7,7 @@
 
 
 
-$environment = 2;
+$environment = 3;
 // 1 - LIVE
 // 2 - XAMPP
 // 3 - C9.io

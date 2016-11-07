@@ -186,12 +186,13 @@ div.browse-item {
 
 }
 
+/*
 div.browse-item:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.2);
   position: relative;
   top: -1px;
 }
-
+*/
 
 div.browse-item::after {
   content: "";
@@ -221,3 +222,7 @@ div.browse-item-image {
   font-weight: bold;
   line-height: 3rem;
 }
+
+/* PLUGINS
+==============================================*/
+.tooltip_templates { display: none; }
