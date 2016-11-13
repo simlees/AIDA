@@ -5,6 +5,10 @@ body {
 /* TYPOGRAPHY
 ==============================================*/
 
+html {
+  font-size: 13px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
