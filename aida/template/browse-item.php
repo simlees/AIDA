@@ -1,28 +1,11 @@
 <?php
 // This section gets the weather for the city
 
-$url = "http://api.openweathermap.org/data/2.5/weather?q=".urlencode($property['city']);
+$url = "http://api.openweathermap.org/data/2.5/weather?q=".urlencode($property['city'])."&APPID=".OPENWEATHERKEY;
+$json = file_get_contents($url);
+$openWeatherObject = json_decode($json);
 
-// Create a stream
-$options = array(
-  'http'=>array(
-    'method'=>"GET",
-    'header'=>"Accept-language: en\r\n" .
-              "Cookie: foo=bar\r\n",
-    'X-Api-Key'=>"109b0f8b1d75676485c1c84f0f197ac6"
-  )
-);
-
-$context = stream_context_create($options);
-
-// Open the file using the HTTP headers set above
-$file = file_get_contents($url, false, $context);
-
-
-//$file = file_get_contents("https://restcountries.eu/rest/v1/name/estonia",false,$context);
-
-
-echo $file;
+$iconURL = "http://openweathermap.org/img/w/".$openWeatherObject->weather[0]->icon.".png";
 
 ?>
 
@@ -35,10 +18,10 @@ echo $file;
             <!--<span class="tooltip_templates" id="tooltip_content"> <strong>This is the content of my tooltip!</strong></span>-->
             <div class="tooltip_templates">
                 <span id="browse_item_tooltip_<?=$property['id']?>">
-                    <img src="myimage.png" /> <strong>This is the content of my tooltip!</strong>
+                    <img src="<?=$iconURL?>" /> <strong><?=$openWeatherObject->weather[0]->main?></strong>
                 </span>
             </div>
-            <span class="browse-item-sleeps"><?=$property['capacity']?></span>
+            <span class="browse-item-sleeps">Sleeps: <?=$property['capacity']?></span><br>
             <span class="browse-item-price">£<?=$property['price']?></span>
             <div class="browse-item-buttons">
                 <a href="#" class="btn btn-success">Rent</a>

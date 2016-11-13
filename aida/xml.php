@@ -18,7 +18,7 @@ $name = "testing";
 header ("Content-Type:text/xml");//Tell browser to expect xml
 
 //Top of xml file
-$_xml = '<?xml version="1.0"?>'; 
+$_xml = '<?xml version="1.0" encoding="UTF-8"?>'; 
 $_xml .="<properties>";
 
 

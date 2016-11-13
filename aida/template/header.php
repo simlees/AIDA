@@ -20,6 +20,7 @@
 
     <!-- Plugin Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/tooltipster/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/tooltipster/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" />
     
     <!-- Custom Stylesheets -->
     <link href="assets/css/main.css" rel="stylesheet">

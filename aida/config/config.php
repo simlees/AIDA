@@ -1,22 +1,10 @@
 <?php
 
 
-
-
-
-
-
-
 $environment = 3;
 // 1 - LIVE
 // 2 - XAMPP
 // 3 - C9.io
-
-
-
-
-
-
 
 
 if($environment == 1)
@@ -51,12 +39,6 @@ try
      // What does this mean?
      $dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-
-
-
-
-
-
 }
 catch(PDOException $e)
 {
@@ -67,3 +49,5 @@ catch(PDOException $e)
 error_reporting(-1);
 ini_set('display_errors', 'On');
 set_error_handler("var_dump");
+
+define('OPENWEATHERKEY','109b0f8b1d75676485c1c84f0f197ac6');

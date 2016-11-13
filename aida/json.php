@@ -9,4 +9,4 @@ require_once 'config/init.php';
 
 $properties = $property->getAll();
 
-print $json_encode($properties);
+print json_encode($properties);

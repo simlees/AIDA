@@ -32,6 +32,11 @@
       <li><a href="contact.php">Contact</a></li>
     </ul>
     <ul>
+      <li><a href="xml.php">XML</a></li><ul>
+      <li><a href="styledxml.php">Styled XML</a></li>
+      <li><a href="json.php">JSON</a></li>
+    </ul>
+    <ul>
       <li><a href="../index.php">Return to Main Site</a></li>
     </ul>
   </div>
