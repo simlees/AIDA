@@ -1,7 +1,7 @@
 <?php
 
 
-$environment = 3;
+$environment = 2;
 // 1 - LIVE
 // 2 - XAMPP
 // 3 - C9.io
